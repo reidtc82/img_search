@@ -2,4 +2,8 @@ setup.py
 img_search.egg-info/PKG-INFO
 img_search.egg-info/SOURCES.txt
 img_search.egg-info/dependency_links.txt
+img_search.egg-info/requires.txt
 img_search.egg-info/top_level.txt
+tests/__init__.py
+tests/app_tests/__init__.py
+tests/app_tests/test_app.py

@@ -1,10 +1,11 @@
 Metadata-Version: 1.0
 Name: img-search
-Version: 0.0.0
-Summary: UNKNOWN
+Version: 0.0
+Summary: An image search clone built with Flask
 Home-page: UNKNOWN
-Author: UNKNOWN
+Author: Reid Case
 Author-email: UNKNOWN
 License: UNKNOWN
 Description: UNKNOWN
+Keywords: image search flask
 Platform: UNKNOWN
