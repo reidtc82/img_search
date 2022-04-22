@@ -34,5 +34,5 @@ if defined _OLD_CODEPAGE (
 
 set FLASK_ENV=development
 pushd ..\img_search\src\img_search\
-set FLASK_APP=app.py
+set FLASK_APP=img_search.py
 set DEBUG="True"

@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-requires = ["flask", "flask-sqlalchemy", "psycopg2"]
+requires = ["flask", "flask-sqlalchemy", "psycopg2", "flask_wtf"]
 
 setup(
     name="img_search",
