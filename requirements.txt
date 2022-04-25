@@ -15,10 +15,12 @@ cryptowatch-sdk==0.0.14
 distlib==0.3.1
 filelock==3.0.12
 Flask==2.1.1
+Flask-Reuploaded==1.2.0
 Flask-SQLAlchemy==2.5.1
+Flask-WTF==1.0.1
 greenlet==1.1.2
 idna==2.10
--e git+https://github.com/reidtc82/img_search.git@b36daca0f3023ad8c4001d7ec7aa26113b525ace#egg=img_search
+-e git+https://github.com/reidtc82/img_search.git@e6da5085d581a34ea8d8eebcd1c8dc39b45ce399#egg=img_search
 importlib-metadata==4.11.3
 iniconfig==1.1.1
 isort==5.8.0
@@ -58,4 +60,5 @@ virtualenv-clone==0.5.4
 websocket-client==1.2.1
 Werkzeug==2.1.1
 wrapt==1.12.1
+WTForms==3.0.1
 zipp==3.8.0
