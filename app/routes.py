@@ -1,5 +1,6 @@
 from fileinput import filename
-from app import app, forms
+from app import app, forms, db
+from app.models import Image
 
 # from app.forms import UploadForm
 import os
@@ -10,6 +11,7 @@ from werkzeug.utils import secure_filename
 @app.before_first_request
 def before_first_request():
     app.logger.info("Here I am!")
+    # Check that database is empty and if so download image dataset and fill it in
 
 
 @app.route("/")
