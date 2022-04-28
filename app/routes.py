@@ -7,6 +7,11 @@ from flask import url_for, redirect, render_template, flash, request
 from werkzeug.utils import secure_filename
 
 
+@app.before_first_request
+def before_first_request():
+    app.logger.info("Here I am!")
+
+
 @app.route("/")
 @app.route("/index")
 def index():

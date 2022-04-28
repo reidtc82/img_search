@@ -1,6 +1,7 @@
 setup.py
 app/__init__.py
 app/forms.py
+app/models.py
 app/routes.py
 img_search.egg-info/PKG-INFO
 img_search.egg-info/SOURCES.txt
