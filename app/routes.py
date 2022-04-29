@@ -10,8 +10,13 @@ from werkzeug.utils import secure_filename
 
 @app.before_first_request
 def before_first_request():
-    app.logger.info("Here I am!")
+    app.logger.info("Initializing")
     # Check that database is empty and if so download image dataset and fill it in
+    images = Image.query.all()
+    if not images:
+        app.logger.info("Images database is empty")
+        img_gen = ImageLoader()
+        img = Image(id, img_gen.get_location())
 
 
 @app.route("/")
