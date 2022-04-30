@@ -176,3 +176,5 @@ build/
 config.py
 
 uploaded_images/
+app.db
+ap.dp-journal
