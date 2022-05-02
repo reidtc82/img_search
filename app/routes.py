@@ -19,9 +19,13 @@ def before_first_request():
         app.logger.info("Images database is empty")
         img_gen = ImageLoader(debug=True)
         app.logger.info("Filling database")
+        id_it = 1
         for img_loc in img_gen:
-            db.session.add(Image(image_location=img_loc))
+            temp_img = Image(id=id_it, image_location=img_loc)
+            db.session.add(temp_img)
+            app.logger.info("Writing image " + str(temp_img) + " to database...")
             db.session.commit()
+            id_it += 1
 
 
 @app.route("/")

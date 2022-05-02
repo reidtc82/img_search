@@ -9,6 +9,6 @@ class ImageLoader(Iterable):
 
     def __iter__(self):
         if self.debug:
-            file_list = os.listdir(app.config["RAWIMAGES"])
+            file_list = os.listdir(app.config["RAWIMAGE_BASEDIR"])
             for filename in file_list:
-                yield os.path.join(app.config["RAWIMAGES"], filename)
+                yield filename
